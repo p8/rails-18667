@@ -1,0 +1,8 @@
+<% cache do %>
+  <h1>i am bar</h1>
+
+  <% if $counter < 2 %>
+    <% $counter += 1 %>
+    <%= render partial: "foo" %>
+  <% end %>
+<% end %>
